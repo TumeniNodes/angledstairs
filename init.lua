@@ -7,7 +7,7 @@ angledstairs = {}
 
 function angledstairs.register_angled_stair(subname, recipeitem, groups, images, description, sounds)
 	groups.angledstair = 1
-minetest.register_node(":angledstairs:angled_stair_" .. subname, {
+minetest.register_node(":angledstairs:angled_stair_right" .. subname, {
 	description = description,
 	drawtype = "nodebox",
 	tiles = images,
@@ -39,6 +39,39 @@ minetest.register_node(":angledstairs:angled_stair_" .. subname, {
 		}
 	}
 })
+
+minetest.register_node(":angledstairs:angled_stair_left" .. subname, {
+	description = description,
+	drawtype = "nodebox",
+	tiles = images,
+	paramtype = "light",
+	paramtype2 = "facedir",
+	facedir = simple,
+	groups = groups,
+	sounds = sounds,
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.0625, -0.5, 0, 0.5, 0.5, 0.5},
+			{-0.125, -0.5, 0.0625, -0.0625, 0.5, 0.5},
+			{-0.1875, -0.5, 0.125, -0.125, 0.5, 0.5},
+			{-0.25, -0.5, 0.1875, -0.1875, 0.5, 0.5},
+			{-0.3125, -0.5, 0.25, -0.25, 0.5, 0.5},
+			{-0.375, -0.5, 0.3125, -0.3125, 0.5, 0.5},
+			{-0.4375, -0.5, 0.375, -0.375, 0.5, 0.5},
+			{-0.5, -0.5, 0.4375, -0.4375, 0.5, 0.5},
+			{0.4375, -0.5, -0.5, 0.5, 0.5, -0.4375},
+			{0.375, -0.5, -0.4375, 0.5, 0.5, -0.375},
+			{0.3125, -0.5, -0.375, 0.5, 0.5, -0.3125},
+			{0.25, -0.5, -0.3125, 0.5, 0.5, -0.25},
+			{0.1875, -0.5, -0.25, 0.5, 0.5, -0.1875},
+			{0.125, -0.5, -0.1875, 0.5, 0.5, -0.125},
+			{0.0625, -0.5, -0.125, 0.5, 0.5, -0.0625},
+			{0, -0.5, -0.0625, 0.5, 0.5, 0},
+			{-0.5, -0.5, -0.5, 0.5, 0, 0.5},
+		}
+	}
+})
 end
 
 -- Register angledstairs.
@@ -46,7 +79,7 @@ end
 
 function angledstairs.register_angled_slab(subname, recipeitem, groups, images, description, sounds)
 	groups.angledslab = 1
-minetest.register_node(":angledstairs:angled_slab_" .. subname, {
+minetest.register_node(":angledstairs:angled_slab_right" .. subname, {
 	description = description,
 	drawtype = "nodebox",
 	tiles = images,
@@ -73,6 +106,37 @@ minetest.register_node(":angledstairs:angled_slab_" .. subname, {
 			{-0.5, -0.5, -0.1875, -0.125, 0, -0.125},
 			{-0.5, -0.5, -0.125, -0.0625, 0, -0.0625},
 			{-0.5, -0.5, -0.0625, 0, 0, 0},
+		}
+	}
+})
+
+minetest.register_node(":angledstairs:angled_slab_left" .. subname, {
+	description = description,
+	drawtype = "nodebox",
+	tiles = images,
+	paramtype = "light",
+	paramtype2 = "facedir",
+	groups = groups,
+	sounds = sounds,
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.0625, -0.5, 0, 0.5, 0, 0.5},
+			{-0.125, -0.5, 0.0625, -0.0625, 0, 0.5},
+			{-0.1875, -0.5, 0.125, -0.125, 0, 0.5},
+			{-0.25, -0.5, 0.1875, -0.1875, 0, 0.5},
+			{-0.3125, -0.5, 0.25, -0.25, 0, 0.5},
+			{-0.375, -0.5, 0.3125, -0.3125, 0, 0.5},
+			{-0.4375, -0.5, 0.375, -0.375, 0, 0.5},
+			{-0.5, -0.5, 0.4375, -0.4375, 0, 0.5},
+			{0.4375, -0.5, -0.5, 0.5, 0, -0.4375},
+			{0.375, -0.5, -0.4375, 0.5, 0, -0.375},
+			{0.3125, -0.5, -0.375, 0.5, 0, -0.3125},
+			{0.25, -0.5, -0.3125, 0.5, 0, -0.25},
+			{0.1875, -0.5, -0.25, 0.5, 0, -0.1875},
+			{0.125, -0.5, -0.1875, 0.5, 0, -0.125},
+			{0.0625, -0.5, -0.125, 0.5, 0, -0.0625},
+			{0, -0.5, -0.0625, 0.5, 0, 0},
 		}
 	}
 })
