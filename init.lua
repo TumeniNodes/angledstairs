@@ -9,14 +9,15 @@ function angledstairs.register_angled_stair(subname, recipeitem, groups, images,
 	groups.angledstair = 1
 minetest.register_node(":angledstairs:angled_stair_right" .. subname, {
 	description = description,
-	drawtype = "nodebox",
+	drawtype = "mesh",
+	mesh = "angle_stairR.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
 	facedir = simple,
 	groups = groups,
 	sounds = sounds,
-	node_box = {
+	collision_box = {
 		type = "fixed",
 		fixed = {
 			{-0.5, -0.5, 0, 0.0625, 0.5, 0.5},
@@ -42,14 +43,15 @@ minetest.register_node(":angledstairs:angled_stair_right" .. subname, {
 
 minetest.register_node(":angledstairs:angled_stair_left" .. subname, {
 	description = description,
-	drawtype = "nodebox",
+	drawtype = "mesh",
+	mesh = "angle_stairL.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
 	facedir = simple,
 	groups = groups,
 	sounds = sounds,
-	node_box = {
+	collision_box = {
 		type = "fixed",
 		fixed = {
 			{-0.0625, -0.5, 0, 0.5, 0.5, 0.5},
@@ -81,13 +83,14 @@ function angledstairs.register_angled_slab(subname, recipeitem, groups, images, 
 	groups.angledslab = 1
 minetest.register_node(":angledstairs:angled_slab_right" .. subname, {
 	description = description,
-	drawtype = "nodebox",
+	drawtype = "mesh",
+	mesh = "angled_slabR.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
 	groups = groups,
 	sounds = sounds,
-	node_box = {
+	collision_box = {
 		type = "fixed",
 		fixed = {
 			{-0.5, -0.5, 0, 0.0625, 0, 0.5},
@@ -112,13 +115,14 @@ minetest.register_node(":angledstairs:angled_slab_right" .. subname, {
 
 minetest.register_node(":angledstairs:angled_slab_left" .. subname, {
 	description = description,
-	drawtype = "nodebox",
+	drawtype = "mesh",
+	mesh = "angled_slabL.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
 	groups = groups,
 	sounds = sounds,
-	node_box = {
+	collision_box = {
 		type = "fixed",
 		fixed = {
 			{-0.0625, -0.5, 0, 0.5, 0, 0.5},
