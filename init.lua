@@ -10,7 +10,7 @@ function angledstairs.register_angled_stair(subname, recipeitem, groups, images,
 minetest.register_node(":angledstairs:angled_stair_right" .. subname, {
 	description = description,
 	drawtype = "mesh",
-	mesh = "angle_stairR.obj",
+	mesh = "angled_stairR.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -44,7 +44,7 @@ minetest.register_node(":angledstairs:angled_stair_right" .. subname, {
 minetest.register_node(":angledstairs:angled_stair_left" .. subname, {
 	description = description,
 	drawtype = "mesh",
-	mesh = "angle_stairL.obj",
+	mesh = "angled_stairL.obj",
 	tiles = images,
 	paramtype = "light",
 	paramtype2 = "facedir",
