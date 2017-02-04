@@ -1,4 +1,4 @@
--- [Mod] Angled Stairs [angledstairs] (1.0) by TumeniNodes 05-31-2016
+-- [Mod] Angled Stairs [angledstairs] (1.1) by TumeniNodes 05-31-2016
 
 angledstairs = {}
 
