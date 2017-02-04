@@ -213,6 +213,13 @@ angledstairs.register_angled_stair_and_angled_slab("stonebrick", "default:stoneb
 		"Stone Brick Slab",
 		default.node_sound_stone_defaults())
 
+angledstairs.register_angled_stair_and_angled_slab("stone_block", "default:stone_block",
+		{cracky = 3},
+		{"default_stone_block.png"},
+		"Stone Block Stair",
+		"Stone Block Slab",
+		default.node_sound_stone_defaults())
+
 angledstairs.register_angled_stair_and_angled_slab("desert_stone", "default:desert_stone",
 		{cracky = 3},
 		{"default_desert_stone.png"},
@@ -234,6 +241,13 @@ angledstairs.register_angled_stair_and_angled_slab("desert_stonebrick", "default
 		"Desert Stone Brick Slab",
 		default.node_sound_stone_defaults())
 
+angledstairs.register_angled_stair_and_angled_slab("desert_stone_block", "default:desert_stone_block",
+		{cracky = 3},
+		{"default_desert_stone_block.png"},
+		"Desert Stone Block Stair",
+		"Desert Stone Block Slab",
+		default.node_sound_stone_defaults())
+
 angledstairs.register_angled_stair_and_angled_slab("sandstone", "default:sandstone",
 		{crumbly = 1, cracky = 3},
 		{"default_sandstone.png"},
@@ -248,6 +262,13 @@ angledstairs.register_angled_stair_and_angled_slab("sandstonebrick", "default:sa
 		"Sandstone Brick Slab",
 		default.node_sound_stone_defaults())
 
+angledstairs.register_angled_stair_and_angled_slab("sandstone_block", "default:sandstone_block",
+		{cracky = 2},
+		{"default_sandstone_block.png"},
+		"Sandstone Block Stair",
+		"Sandstone Block Slab",
+		default.node_sound_stone_defaults())
+
 angledstairs.register_angled_stair_and_angled_slab("obsidian", "default:obsidian",
 		{cracky = 1, level = 2},
 		{"default_obsidian.png"},
@@ -260,6 +281,13 @@ angledstairs.register_angled_stair_and_angled_slab("obsidianbrick", "default:obs
 		{"default_obsidian_brick.png"},
 		"Obsidian Brick Stair",
 		"Obsidian Brick Slab",
+		default.node_sound_stone_defaults())
+
+angledstairs.register_angled_stair_and_angled_slab("obsidian_block", "default:obsidian_block",
+		{cracky = 1, level = 2},
+		{"default_obsidian_block.png"},
+		"Obsidian Block Stair",
+		"Obsidian Block Slab",
 		default.node_sound_stone_defaults())
 
 angledstairs.register_angled_stair_and_angled_slab("brick", "default:brick",
