@@ -473,3 +473,84 @@ angledstairs.register_angled_stair_and_angled_slab("_water", "default:water",
 		"Water Slab",
 		default.node_sound_stone_defaults())
 
+--Recipes by otterwise
+
+angledstairs.register_recipes = function(angst_mat)
+    minetest.register_craft({
+        output = 'angledstairs:angled_stair_right_' .. angst_mat .. " 6",
+        recipe = {
+            {'', '', ''},
+            {'', 'default:' .. angst_mat, 'default:' .. angst_mat},
+            {'default:' .. angst_mat, 'default:' .. angst_mat, 'default:' .. angst_mat},
+        }
+    })
+
+    minetest.register_craft({
+        output = 'angledstairs:angled_stair_left_' .. angst_mat .. " 6",
+        recipe = {
+            {'', '', ''},
+            {'default:' .. angst_mat, 'default:' .. angst_mat, ''},
+            {'default:' .. angst_mat, 'default:' .. angst_mat, 'default:' .. angst_mat},
+        }
+    })
+
+    minetest.register_craft({
+        output = 'angledstairs:angled_slab_right_' .. angst_mat .. " 12",
+        recipe = {
+            {'', '', ''},
+            {'', 'default:' .. angst_mat, 'default:' .. angst_mat},
+            {'', 'default:' .. angst_mat, ''},
+        }
+    })
+
+    minetest.register_craft({
+        output = 'angledstairs:angled_slab_left_' .. angst_mat .. " 12",
+        recipe = {
+            {'', '', ''},
+            {'default:' .. angst_mat, 'default:' .. angst_mat, ''},
+            {'', 'default:' .. angst_mat, ''},
+        }
+    })
+end
+
+angledstairs.register_recipes("acacia_wood")
+angledstairs.register_recipes("aspen_wood")
+angledstairs.register_recipes("junglewood")
+angledstairs.register_recipes("pine_wood")
+angledstairs.register_recipes("wood")
+angledstairs.register_recipes("brick")
+angledstairs.register_recipes("clay")
+angledstairs.register_recipes("cobble")
+angledstairs.register_recipes("mossycobble")
+angledstairs.register_recipes("desert_cobble")
+angledstairs.register_recipes("desert_stone")
+angledstairs.register_recipes("desert_stone_block")
+angledstairs.register_recipes("desert_stonebrick")
+angledstairs.register_recipes("desert_sandstone")
+angledstairs.register_recipes("desert_sandstone_block")
+angledstairs.register_recipes("desert_sandstone_brick")
+angledstairs.register_recipes("sandstone")
+angledstairs.register_recipes("sandstone_block")
+angledstairs.register_recipes("sandstonebrick")
+angledstairs.register_recipes("silver_sandstone")
+angledstairs.register_recipes("silver_sandstone_block")
+angledstairs.register_recipes("silver_sandstone_brick")
+angledstairs.register_recipes("stone")
+angledstairs.register_recipes("stone_block")
+angledstairs.register_recipes("stonebrick")
+angledstairs.register_recipes("obsidian")
+angledstairs.register_recipes("obsidian_block")
+angledstairs.register_recipes("obsidianbrick")
+angledstairs.register_recipes("bronzeblock")
+angledstairs.register_recipes("copperblock")
+angledstairs.register_recipes("diamondblock")
+angledstairs.register_recipes("goldblock")
+angledstairs.register_recipes("meseblock")
+angledstairs.register_recipes("steelblock")
+angledstairs.register_recipes("tinblock")
+angledstairs.register_recipes("dirt")
+angledstairs.register_recipes("grass")
+angledstairs.register_recipes("ice")
+angledstairs.register_recipes("snow")
+angledstairs.register_recipes("lava")
+angledstairs.register_recipes("water")
